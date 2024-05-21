@@ -114,7 +114,7 @@ small{
   background: #ecf2f8;
   display: flex;
   flex-direction: column;
-  height: 86vh;
+  height: 94%;
   position: relative;
   top: 1rem;
  }
@@ -166,13 +166,35 @@ small{
    border-radius: var(--border-radius-1);
  }
 
+ /*data*/
  .charts {
   display: grid;
   grid-template-columns: repeat(2,1fr) ;
   gap: 1rem;
   margin-top: 1rem;
 }
-
+.charts{
+  justify-content: center;
+}
+.chartstb {
+  display: grid;
+  grid-template-columns: repeat(1,1fr) ;
+  margin-top: 1rem;
+}
+.chartstb-img{
+  justify-content: center;
+}
+.charts-cardtb {
+  background-color: white;
+  margin-bottom: 20px;
+  margin-right: 700px;
+  margin-left: 700px;
+  padding: 40px;
+  box-sizing: border-box;
+  -webkit-column-break-inside: avoid;
+  border-radius: 5px;
+  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+}
 .charts-card {
   background-color: white;
   margin-bottom: 20px;
@@ -189,7 +211,24 @@ small{
   justify-content: center;
 }
 
- 
+footer{
+  text-align: center;
+  padding: 10px;
+  background-color: #5d5fef;
+ }
+
+
+ .footer-main {
+  background-color: #5d5fef;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+ .footer-about{
+  width: 100%;
+  margin-bottom: 20px;
+}
 
  
  main{
@@ -242,7 +281,7 @@ btn{
   border-radius: .25em;
 }
 .select::after {
-  content: '\25BC';
+  content: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -258,7 +297,6 @@ select::-ms-expand {
 .select:hover::after {
   color: #5d5fef;
 }
-
 
 
 main .insights{
@@ -300,9 +338,7 @@ main .insights > div .middle{
 main .insights > div .middle h1{
   font-size: 1.6rem;
 }
-.sales{
-  background-color: #ffe2e5;
-}
+
 .expenses{
   background-color:#fff4de ;
 }
@@ -316,11 +352,7 @@ main .expenses>div  span{
    color: var(--clr-white);
    font-size: 2rem; 
 }
-.order{
-  background-color: #f3e8ff;
-}
 main .order>div  span{
- background: ;
   padding: 0.5rem;
    border-radius: 50%;
    color: var(--clr-white);
@@ -347,11 +379,7 @@ main.column {
     clear: both;
   }
 
-  @media screen and (max-width:600px) {
-    .column {
-      width: 100%;
-    }
-  }
+
   .country{
     background-color: #d5ebfc;
   }
@@ -429,202 +457,6 @@ main .insights  .number{
   align-items: center;
 }
 
-/* recent order */
-
-main .recent_order{
-   margin-top: 2rem;
-}
-
-main .recent_order h2{
-    color: var(--clr-dark);
-}
-
-main .recent_order h2{
-  margin-bottom: 0.8rem;
-}
-main .recent_order table{
-  background: var(--clr-white);
-  width: 100%;
-  border-radius: var(--card-border-radius);
-  padding: var(--card-padding);
-  text-align: center;
-  box-shadow: var(--box-shadow);
-  transition: all .3s ease;
-  color: var(--clr-dark);
-}
-main .recent_order table:hover{
-  box-shadow: none;
-}
-
-main table tbody td{
-   height: 3.8rem;
-   border-bottom: 1px solid var(--clr-white);
-   color:var(--clr-dark-variant)
-}
-main table tbody tr:last-child td{
-   border: none;
-}
-
-
-main .recent_order a{
-  text-align: center;
-  display: block;
-  margin: 1rem;
-}
-
-
-/*********************
-Right Side
-**********************/
-
-.right{
-  margin-top: 1.4rem;
-}
-.right h2{
-  color: var(--clr-dark);
-}
-.right .top{
-  display: flex;
-  justify-content: start;
-  gap: 2rem;
-}
-
-.right .top button{
-  display: none;
-}
-
-.right .theme-toggler{
-  background: var(--clr-white);
-  display: flex;
-  justify-content: space-between;
-  height: 1.6rem;
-  width: 4.2rem;
-  cursor: pointer;
-  border-radius: var(--border-radius-1);
-}
-.right .theme-toggler span{
-  font-size: 1.2rem;
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.right .theme-toggler span.active{
-  background: var(--clr-primary);
-  color: #fff;
-}
-
-
-.right .top .profile{
-  display: flex;
-  gap: 2rem;
-  text-align: right;
-}
-.right  .info h3{
-  color: var(--clr-dark);
-}
-.right  .item h3{
-  color: var(--clr-dark);
-}
-
-/* recent update */
-
-.right .recent_updates{
-  margin-top: 1rem;
-  margin-left: -20px;
-}
-.right .recent_updates .updates{
-  background-color: var(--clr-white);
-  padding: var(--card-padding);
-  border-radius: var(--card-border-radius);
-  box-shadow: var(--box-shadow);
-   transition: all .3s ease;
-}
-.right .recent_updates .updates:hover{
-  box-shadow: none;
-}
-.right .recent_updates .update{
-   display: grid;
-   grid-template-columns: 2.6rem auto;
-   gap: 1rem;
-   margin-bottom: 1rem;
-}
-
-
-.right .recent_updates .update p{
-
-}
-
-/* see analytics */
-
-.right .sales-analytics{
-  margin-top: 2rem;
-}
-.right .sales-analytics h2{
-  margin-bottom: 0.8rem;
-}
-.right .sales-analytics .item{
-  background-color: var(--clr-white);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  margin: 10px 0;
-  width: 100%;
-  margin-bottom: 0.8rem;
-  padding: 1.4rem var(--card-padding);
-  border-radius: var(--border-radius-3);
-  box-shadow: var(--box-shadow);
-}
-.right .sales-analytics .item:hover{
-  box-shadow: none;
-}
-
-.right .sales-analytics .item .icon{
-  padding: 0.6rem;
-  color: var(--clr-white);
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  line-height: 50px;
-  align-items: center;
-  background: coral;
-}
-.right .sales-analytics .item:nth-child(3) .icon
-{
-  background: var(--clr-success);
-}
-.right .sales-analytics .item:nth-child(4) .icon
-{
-  background: var(--clr-danger);
-}
-
-.right .sales-analytics .item .right{
-  margin-left: 15px;
-  display: flex;
-  justify-content: space-around;
-}
-.right .sales-analytics .item .right h3{
-  color: var(d);
-}
-
-
-.add_product div{
-  display: flex;
-  height: 60px;
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  border: 2px dashed;
-  color: var(--clr-dark-variant);
-  margin-bottom: 40px;
-
-}
-
-
 
 
 /* **********8
@@ -633,7 +465,7 @@ MEDIA QUERY
 
 @media screen and (max-width:1200px) {
     .container{
-      width: 94%;
+      width: 100%;
       grid-template-columns: 7rem auto 14rem;
     }
     aside .sidebar h3{
@@ -651,6 +483,7 @@ MEDIA QUERY
       grid-template-columns: repeat(1,1fr);
     }
 }
+
 
 /* ****************
 MEDIA QUERY PHONE
@@ -701,15 +534,13 @@ MEDIA QUERY PHONE
      font-size: 35px;
      cursor: pointer;
   }
-
-
-  footer{
-  padding: 20px;
-  margin-left: 2rem;
-  justify-content: center;
- position: fixed;
-}
-footer p{
-  color: color(srgb red green blue);
-  font-size: 100px ;
-}
+  @media (max-width: 600px) {
+    .charts {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .charts-card {
+      width: 100%;
+      margin-bottom: 20px;}
+    }
+  }
