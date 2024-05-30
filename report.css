@@ -27,7 +27,7 @@
     font-weight: 500px;
     position: flex;
     top: 288px;
-    width: auto;
+    width: 70rem;
     align-items: center;
     justify-content: center;
 }  
@@ -67,6 +67,7 @@ input[type="radio"]{
     color: #555;
     padding: 0 10px;
     line-height: 26px;
+    font-size: 12px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s, padding 0.5s;
