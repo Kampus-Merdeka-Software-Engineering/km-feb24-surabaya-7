@@ -444,12 +444,12 @@ footer{
   background-color: #5d5fef;
 }
 
- .footer-main {
+.footer-main {
   background-color: #5d5fef;
   color: white;
   text-align: center;
-  padding: 10px;
-  width: 80%;
+  padding: auto;
+  width: 100%;
 }
 
  .footer-about{
