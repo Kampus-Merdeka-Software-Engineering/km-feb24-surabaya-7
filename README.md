@@ -23,7 +23,7 @@ Dataride is a dashboard that focuses on analyzing data about bicycle sales and t
 
 | Name | Link |
 | ------ | ------ |
-| FINAL | [Here](https://sby-7-beta.vercel.app/)|
+| FINAL | [Here](https://km-sby24-07.vercel.app)|
 
 ## Team Members
 
